@@ -1,6 +1,6 @@
 /**
  * Simple C++ class for representing a Cube.
- * 
+ *
  * @author
  *   Wade Fagen-Ulmschneider <waf@illinois.edu>
  */
@@ -12,11 +12,12 @@
 // of the class, curly braces, and a required semicolon
 // at the end:
 class Cube {
-  public:  // Public members:
-    double getVolume();
-    double getSurfaceArea();
-    void setLength(double length);
+public: // Public members:
+  Cube() { length_ = 1; }
+  double getVolume();
+  double getSurfaceArea();
+  void setLength(double length);
 
-  private: // Private members:
-    double length_;
+private: // Private members:
+  double length_;
 };
